@@ -4,12 +4,12 @@
         <img src="../assets/bemutatkozas 1.png">
       </div>
       <div class="right-introduction">
-        <div style="width: 100%; background-color: white; padding-top: 1px; font-size: 20px; text-transform: uppercase; padding-left: 50px; display: flex; align-items: center ;">
-          <h1 style=" font-weight: normal;">Bemutatkozás</h1>
+        <div style=" width: 100%; background-color: white; padding-top: 1px; font-size: 20px; text-transform:uppercase; display: flex; align-items: center; font-weight: normal;">
+          <h1 style=" font-weight: normal; margin-left: 50px;">Bemutatkozás</h1>
         </div>
         <div class="right-introduction-text">
           <a v-if="!editing" class="justifyed-text">{{ introductionStore.originalText }}</a>
-          <textarea v-else v-model="introductionStore.editedText"></textarea>
+          <textarea v-else v-model="introductionStore.editedText" maxlength="350" style="width: 800px; height: 200px; max-height: 200px; overflow-y: auto;" placeholder="Adja meg a szöveget..."></textarea>
         </div>
         <button class="my-button3" :style="{ backgroundColor: editing ? '#03AB96' : '#03AB96', color: editing ? '#fff' : '#fff' }" @click="toggleEditing">
           {{ editing ? 'Mentés' : 'Módositás' }}
@@ -67,18 +67,22 @@
 }
 
 .right-introduction {
-    width: 53%;
+    width: 55%;
     height: 100%;
 }
 
-.right-introduction-text{
-    width: 60%;
-    height: 65%;
-    font-size: 20px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding-left: 50px;
+.right-introduction-text {
+  max-width: 60%; 
+  height: 65%;
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 50px;
+  overflow: hidden;
+  white-space: normal;
+  word-break: break-all; 
+  font-weight: normal;
 }
 
 .my-button3{

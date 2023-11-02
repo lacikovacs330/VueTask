@@ -168,11 +168,16 @@ export default {
 color: white;
 }
 
+.image-overlay h3{
+  font-weight: normal;
+}
+
 .my-button2 {
   width:192px;
   height: 55px;
   border: 0;
   text-transform: uppercase;
   font-weight: bold;
+  cursor: pointer;
 }
 </style>

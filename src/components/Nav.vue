@@ -9,22 +9,22 @@
     <div class="nav-texts">
       <div class="nav-upper">
         <div class="nav-upper-left">
-          <span><fa icon="phone" style="color: #6E6F71; width: 15px; height: 15px; margin-right: 8px;" />+36 1 123 4567</span>
-          <span><fa icon="envelope" style="color: #6E6F71; width: 15px; height: 15px; margin-right: 8px; margin-left: 20px;" />info@netipar.hu</span>
+          <span><fa icon="phone" style="color: #6E6F71; width: 15px; height: 15px; margin-right: 8px; cursor: pointer;" />+36 1 123 4567</span>
+          <span><fa icon="envelope" style="color: #6E6F71; width: 15px; height: 15px; margin-right: 8px; margin-left: 20px; cursor: pointer;" />info@netipar.hu</span>
         </div>
         <div class="nav-upper-center">
-          <fa :icon="['fab', 'facebook']" style="color: #6E6F71;" />
-          <fa :icon="['fab', 'linkedin']" style="color: #6E6F71; margin-left: 15px;" />
+          <fa :icon="['fab', 'facebook']" style="color: #6E6F71; cursor: pointer;" />
+          <fa :icon="['fab', 'linkedin']" style="color: #6E6F71; margin-left: 15px; cursor: pointer;" />
         </div>
         <div class="nav-upper-right">
           <div class="nav-upper-right-search">
             <div class="icon-container">
-              <fa :icon="['fas', 'magnifying-glass']" style="color: gray;" class="icon" />
+              <fa :icon="['fas', 'magnifying-glass']" style="color: gray; cursor: pointer;" class="icon" />
             </div>
             <input type="text" class="input-field" />
           </div>
-          <div class="nav-upper-right-language">
-            <span style="color: #fff;">Magyar</span>
+          <div class="nav-upper-right-language" style="cursor: pointer;">
+            <span style="color: #fff; ">Magyar</span>
             <fa :icon="['fas', 'angle-down']" style="color: #fff; font-size: 12px; margin-left: 5px;" />
           </div>
         </div>
@@ -42,8 +42,8 @@
             <button class="my-button">Rólunk</button>
         </div>
         <div class="nav-lower-buttons-1">
-            <button class="my-button1" style="background-color: #03AB96; color: #fff;">Belépés</button>
-            <button class="my-button1" style="background-color: #fff; color: #03AB96;">Regisztráció</button>
+            <button class="my-button1" style="background-color: #03AB96; color: #fff; cursor: pointer;">Belépés</button>
+            <button class="my-button1" style="background-color: #fff; color: #03AB96; cursor: pointer;">Regisztráció</button>
         </div>
       </div>
     </div>
