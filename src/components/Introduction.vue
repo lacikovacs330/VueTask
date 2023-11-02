@@ -91,6 +91,8 @@
     border: 0;
     margin-left: 50px;
     cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 .button{
