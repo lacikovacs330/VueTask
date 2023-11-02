@@ -49,9 +49,9 @@ export default {
     return {
       photos: [
         "Selider_01.png",
-        "Selider_01.png",
-        "Selider_01.png",
-        "Selider_01.png"
+        "Selider_01.png", 
+        "Selider_01.png", 
+        "Selider_01.png"  
       ],
       currentPhotoIndex: 0
     };
@@ -59,10 +59,25 @@ export default {
   methods: {
     goToImage(index) {
       this.currentPhotoIndex = index;
+    },
+    startAutoplay() {
+      this.interval = setInterval(() => {
+        this.currentPhotoIndex = (this.currentPhotoIndex + 1) % this.photos.length;
+      }, 4000); 
+    },
+    stopAutoplay() {
+      clearInterval(this.interval);
     }
+  },
+  mounted() {
+    this.startAutoplay(); 
+  },
+  beforeDestroy() {
+    this.stopAutoplay(); 
   }
 };
 </script>
+
 
 <style scoped>
 .container {
@@ -70,6 +85,7 @@ export default {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  height: 680px;
 }
 
 .image-container {
