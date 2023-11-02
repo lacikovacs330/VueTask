@@ -176,22 +176,24 @@ span {
 }
 
 .nav-lower-buttons{
-    width: 80%;
+    width: 90%;
     height: 100%;
+    text-align: center;
 }
 
 .my-button {
+    width: 125px; 
     height: 100%;
     background-color: #666666;
     color: white;
     border: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 12px;
     transition: background-color 0.3s;
     text-transform: uppercase;
-    float: right;    
-    padding: 0 10px 0 10px;
-  }
+    float: right;
+    
+}
 
   .my-button:hover {
     background-color: #03AB96;
