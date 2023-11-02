@@ -142,7 +142,7 @@ span {
 }
 
 .input-field {
-  width: 216px;
+  width: 170px;
   height: 27px;
   background-color: #333333;
   border: 0;
@@ -178,20 +178,18 @@ span {
 .nav-lower-buttons{
     width: 80%;
     height: 100%;
-    margin-right: 55px;
 }
 
 .my-button {
     height: 100%;
     background-color: #666666;
     color: white;
-    padding: 5px 9px;
     border: none;
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s;
     text-transform: uppercase;
-    float: right;
+    float: right;    
   }
 
   .my-button:hover {
@@ -203,10 +201,12 @@ span {
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: #03AB96;
+    background-color: #666666;
+    align-items:end;
   }
 
   .my-button1{
+    width: 200px;
     height: 50%;
     border: 0;
     text-transform: uppercase;
