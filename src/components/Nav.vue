@@ -190,6 +190,7 @@ span {
     transition: background-color 0.3s;
     text-transform: uppercase;
     float: right;    
+    padding: 0 10px 0 10px;
   }
 
   .my-button:hover {
