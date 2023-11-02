@@ -31,15 +31,15 @@
       </div>
       <div class="nav-lower">
         <div class="nav-lower-buttons">
-            <button class="my-button">Rólunk</button>
-            <button class="my-button">Dokumentumok</button>
-            <button class="my-button">Tagjaink</button>
-            <button class="my-button">Csatlakozom</button>
-            <button class="my-button">Híreink</button>
-            <button class="my-button">Rendezvények</button>
-            <button class="my-button">Pályázatok</button>
-            <button class="my-button">Elemzések</button>
             <button class="my-button">Piactér</button>
+            <button class="my-button">Elemzések</button>
+            <button class="my-button">Pályázatok</button>
+            <button class="my-button">Rendvezmények</button>
+            <button class="my-button">Híreink</button>
+            <button class="my-button">Csatlakozom</button>
+            <button class="my-button">Tagjaink</button>
+            <button class="my-button">Dokumentumok</button>
+            <button class="my-button">Rólunk</button>
         </div>
         <div class="nav-lower-buttons-1">
             <button class="my-button1" style="background-color: #03AB96; color: #fff;">Belépés</button>
