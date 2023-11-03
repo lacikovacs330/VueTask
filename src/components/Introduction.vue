@@ -4,8 +4,8 @@
         <img src="../assets/bemutatkozas 1.png">
       </div>
       <div class="right-introduction">
-        <div style=" width: 100%; background-color: white; padding-top: 1px; font-size: 20px; text-transform:uppercase; display: flex; align-items: center; font-weight: normal;">
-          <h1 style=" font-weight: normal; margin-left: 50px;">Bemutatkozás</h1>
+        <div class="hello">
+          <h1>Bemutatkozás</h1>
         </div>
         <div class="right-introduction-text">
           <a v-if="!editing" class="justifyed-text">{{ introductionStore.originalText }}</a>
@@ -44,6 +44,14 @@
   </script>
 
 <style>
+
+.hello{
+  width: 100%; background-color: white; padding-top: 1px; font-size: 20px; text-transform:uppercase; display: flex; align-items: center; font-weight: normal; 
+}
+
+.hello h1{
+  font-weight: normal; margin-left: 50px;
+}
 
 .justifyed-text{
     text-align: justify;
@@ -98,5 +106,44 @@
 .button{
     width: 100%;
     height: 100%;
+    }
+
+    @media screen and (max-width: 785px) {
+      .introduction{
+        display: inline;
+      }
+
+      .left-image{
+        width: 100%;
+      }
+
+      .right-introduction{
+        width: 100%;
+        background-color: #EEEEEE;
+      }
+
+      .hello{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #EEEEEE;
+      }
+
+      .hello h1{
+        margin-left: 0;
+        
+      }
+
+      .right-introduction-text{
+       max-width: 100%;
+       padding: 15px;
+      }
+
+      .my-button3{
+        display: block;
+        margin: 0 auto;
+      }
+
     }
 </style>

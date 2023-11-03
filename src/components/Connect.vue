@@ -169,5 +169,66 @@
     top: 100%;
     cursor: pointer;
 }
+
+@media screen and (max-width: 1290px) {
+  .text-overlay1{
+    left: auto;
+  }
+
+  .text-overlay{
+    left: auto;
+  }
+}
+
+
+
+@media screen and (max-width: 930px) {
+  .second-image,
+.third-image {
+  width: 100%; 
+  max-width: 363px; 
+  height: auto; 
+}
+
+.text-overlay, .text-overlay1 {
+  position: relative; 
+  left: 0; 
+  top: -20%;
+  height: auto; 
+}
+}
+
+@media screen and (max-width: 894px) {
+  .second-image,
+  .third-image {
+    display: none;
+  }
+
+  .background-image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+
+  .text-overlay {
+    position: relative; 
+    left: -2%;
+    top: -40%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text-overlay1 {
+    position: relative;
+    left: 0;
+    top: -40%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 </style>
 

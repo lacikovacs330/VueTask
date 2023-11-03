@@ -1,4 +1,13 @@
 <script setup>
+import { ref } from 'vue';
+
+import { faPhone, faEnvelope, faBars } from "@fortawesome/free-solid-svg-icons";
+
+const isMobileMenuOpen = ref(false);
+
+const toggleMobileMenu = () => {
+  isMobileMenuOpen.value = !isMobileMenuOpen.value;
+};
 </script>
 
 <template>
@@ -45,12 +54,34 @@
             <button class="my-button1" style="background-color: #03AB96; color: #fff; cursor: pointer;">Belépés</button>
             <button class="my-button1" style="background-color: #fff; color: #03AB96; cursor: pointer;">Regisztráció</button>
         </div>
+        <div class="mobile-menu-button" @click="toggleMobileMenu">
+          <fa icon="bars" style="color: #fff; width: 20px; height: 20px;" />
+          </div>
+          
+
+        </div>
       </div>
-    </div>
   </nav>
+  <div v-if="isMobileMenuOpen" class="mobile-menu">
+          <button class="my-button">Piactér</button>
+          <button class="my-button">Elemzések</button>
+          <button class="my-button">Pályázatok</button>
+          <button class="my-button">Rendvezmények</button>
+          <button class="my-button">Híreink</button>
+          <button class="my-button">Csatlakozom</button>
+          <button class="my-button">Tagjaink</button>
+          <button class="my-button">Dokumentumok</button>
+          <button class="my-button">Rólunk</button>
+          <button class="my-button" style="background-color: #03AB96; color: #fff; cursor: pointer;">Belépés</button>
+          <button class="my-button" style="background-color: #fff; color: #03AB96; cursor: pointer;">Regisztráció</button>
+        </div>
 </template>
 
 <style>
+.mobile-menu-button{
+  display: none;
+}
+
 h1 {
   color: black;
 }
@@ -167,6 +198,16 @@ span {
     font-size: 10px;
 }
 
+.nav-upper-right-language1
+{
+  display: none;
+    margin-left: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+}
+
 .nav-lower {
   width: 100%;
   height: 80%;
@@ -183,7 +224,7 @@ span {
 }
 
 .my-button {
-    width: 125px; 
+    width: 100%; 
     height: 100%;
     background-color: #666666;
     color: white;
@@ -217,4 +258,90 @@ span {
     font-weight: bold;
     font-size: 16px;
   }
+
+  @media screen and (max-width: 1335px) {
+
+    .nav-upper-center{
+      width: 0%;
+      display: none;
+    }
+
+    .nav-upper-right-language{
+      width: 0%;
+      display: none;
+    }
+
+    .nav-upper-right-search{
+      width: 0%;
+      display: none;
+    }
+
+    .nav-lower-buttons{
+      display: none;
+    }
+
+    .my-button{
+      height: 50px;
+    }
+
+    .my-button1{
+      display: none;
+    }
+
+    .nav-logo{
+    display: none;
+  }
+
+  .mobile-menu-button {
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 15px;
+  }
+
+  .nav-lower-buttons-1{
+    display: none;
+    
+  }
+
+  }
+
+  @media screen and (max-width: 1100px) {
+  .nav-upper {
+    flex-direction: column; 
+  }
+
+  .nav-upper-left, .nav-upper-right {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .nav-upper-center{
+    display: none;
+  }
+
+  .nav-upper-right-search{
+    display: none;
+  }
+
+  .nav-upper-right {
+    justify-content: center; 
+  }
+
+  .nav-upper-right-search {
+    margin-left: 0; 
+  }
+
+  .nav-lower-buttons, .nav-lower-buttons-1 {
+    display: none; 
+  }
+
+}
+
+
 </style>

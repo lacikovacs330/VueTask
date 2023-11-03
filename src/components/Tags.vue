@@ -150,4 +150,21 @@
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
+
+@media screen and (max-width: 1181px) {
+
+  .exclusive-tag img{
+    width: 100%;
+  };
+  .arrow-left{
+    display: none;
+  }
+  .arrow-right{
+    display: none;
+  }
+
+  .circle{
+    display: none;
+  }
+}
 </style>

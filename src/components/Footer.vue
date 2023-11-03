@@ -201,4 +201,33 @@
     flex-direction: column;
 }
 
+@media screen and (max-width: 1113px) {
+  .footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .footer-first{
+    width: 100%;
+  }
+
+  .footer-second{
+    width: 100%;
+  }
+
+  .footer-third{
+    width: 100%;
+  } 
+}
+
+@media screen and (max-width: 1245px)
+{
+    .footer-low-text{
+    width: 100%;
+    text-align: center;
+  }
+}
+
 </style>

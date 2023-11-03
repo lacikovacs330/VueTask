@@ -13,7 +13,7 @@
               <p>{{ news.title }}</p>
             </div>
             <div class="text-text">
-              <p>{{ limitTextLength(news.text, 30) }}</p>
+              <p>{{ limitTextLength(news.text, 24) }}</p>
             </div>
             <div class="date-arrow">
               <div class="date">
@@ -81,110 +81,126 @@
   </script>
 
 <style>
-.news{
-    width: 100%;
-    height: 750px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.news {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
-    text-transform: uppercase;
-    font-weight: normal;
-    text-align: center;
+  text-transform: uppercase;
+  font-weight: normal;
+  text-align: center;
 }
 
-.news-center{
-    width: 70%;
-    height: 100%;
-    
+.news-center {
+  width: 70%;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
 }
 
-.news-text-image-center{
-    width: 100%;
-    height: 550px;
-    display: flex;
+.news-text-image-center {
+  width: 100%;
+  display: flex;
+  
+  justify-content: center;
+  align-items: flex-start; 
 }
 
-.text-image{
-    width: 25%;
-    height: 100%;
-    margin: 0 auto;
-    padding: 0 10px; 
+.text-image {
+  width: 25%;
+  padding: 0 10px;
 }
 
-.text-image img{
-    width: 100%;
-    height: auto;
+.text-image img {
+  width: 100%;
+  height: auto;
 }
 
-.text-title{
-    width: 100%;
-    height: 80px;
+.text-title {
+  width: 100%;
+  height: 80px;
 }
 
-.text-title p{
-    font-size: 20px;
-    font-weight: bold;
+.text-title p {
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.text-text{
-    width: 100%;
-    height: 215px;
-    font-size: 18px;
+.text-text {
+  width: 100%;
+  font-size: 18px;
 }
 
-.date-arrow{
-    width: 100%;
-    height: 40px;
-    display: flex;
+.date-arrow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.date{
+.date {
+  color: #999999;
+}
+
+.arrow button {
+  width: 40.82px;
+  height: 40.82px;
+  background-color: #03AB96;
+  border: 0;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.next-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; 
+}
+
+.my-button4 {
+  width: 9%; 
+  height: 55px;
+  border: 0;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1300px) {
+  .text-image {
     width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    color: #999999;
+  }
+
+  .news-text-image-center{
+    flex-wrap: wrap; 
+  }
+
+  .my-button4 {
+    width: 50%; 
+  }
 }
 
-.arrow{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    
+@media screen and (max-width: 748px) {
+  .text-image {
+    width: 80%;
+  }
+
+  .text-text {
+    margin-bottom: 0;
+  }
 }
 
-.arrow button{
-    width: 40.82px;
-    height: 40.82px;
-    background-color: #03AB96;
-    border: 0;
-    color: #fff;
-    font-weight: bold;
-    font-size: 15px;
-    cursor: pointer;
+@media screen and (max-width: 340px) {
+  .text-title p {
+    margin-top: 0;
+  }
+  .text-text p {
+    margin-bottom: 0;
+  }
 }
-
-.next-button{
-    width: 100%;
-    height: 110px;
-    display: flex;
-    justify-content: center;
-}
-
-.my-button4{
-    width:9%;
-    height: 55px;
-    border: 0;
-    text-transform: uppercase;
-    cursor: pointer;
-}
-
-
-
 </style>
+
