@@ -94,7 +94,7 @@ body {
   margin: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Raleway:wght@100&display=swap');
+
 
 .nav-upper-left {
   width: 30%;
@@ -179,6 +179,7 @@ span {
     width: 90%;
     height: 100%;
     text-align: center;
+    display: flex;
 }
 
 .my-button {
@@ -205,7 +206,7 @@ span {
     display: flex;
     flex-direction: column;
     background-color: #666666;
-    align-items:end;
+    align-items:flex-end;
   }
 
   .my-button1{
